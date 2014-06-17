@@ -1,0 +1,59 @@
+
+#divSecFnd { background-image: url(img/HdFondoSecFnd.png)!important; }
+
+#divSecHd1 { background-image: url(img/HdFondo.jpg)!important; }
+
+#divSecHd1 #divBsqGbl div.txtBsq, #divSecHd1 #divBsqGbl .iLupa, #divSecHd1 #divBsqGbl .bBsq, #divMenuSocial img { background-image:url('img/HdMenuMapa2013-1.jpg'); }
+
+#divSecHd2 { background-image:url('img/Hd2Fondo.jpg'); }
+@media (max-width: 948px) {
+	#divSecHd2 { background-image: url('img/Hd2FondoMovil.jpg')!important; }
+}
+
+div.sf-arrow,
+.estModsSel span > a > img,
+#divSecHd1 .estSelPaiMX img,
+#divSecHd1 .estSelPaiUS img,
+#divSecHd1 .estSelPaiCO img,
+#divSecHd1 .estSelPaiGT img,
+#divSecHd1 .estSelPaiPT img,
+#divSecHd1 .estSelPaiCR img,
+#divSecHd1 .estSelPaiCA img,
+#divSecHd1 .estSelPaiES img,
+#divSecHd1 .estSelPaiHO img,
+#divSecHd1 .estRegistro span,
+#divSecHd1 .estMiCuenta span,
+#divSecHd1 .estBolsaCompra span,
+#divSecHd1 .estContacto span,
+#divSecHd1 .estBuscar span,
+.estRedSocInf img { background-image:url('img/HdMenuMapa2014.png'); }
+
+#divSecSuperCont { }
+
+
+#divSecSocial { background-image:url(img/HomeFndSocial.png); }
+* html #divSecSocial { background-image:url(img/HomeFndSocial.gif); tosp:-19px;}
+
+
+.Carrusel .divAcercamientos li img{
+}
+
+.Carrusel a.prevA, .Carrusel a.prevC, .Carrusel a.prevS {
+	background: url("img/HdMenuMapa2014.png") -62px -52px no-repeat;
+	margin-right:7px;
+}
+.Carrusel a.nextA, .Carrusel a.nextC, .Carrusel a.nextS {
+	background: url("img/HdMenuMapa2014.png") -62px -36px no-repeat;
+}
+
+/*
+.Carrusel a.next:hover {
+        background-image: url("img/FlechaAcerIzq_1.jpg");
+}
+.Carrusel a.prev:hover {
+        background-image: url("img/FlechaAcerIzq_1.jpg");
+}
+*/  
+
+.TablaGrupos img.ImgNvo { position:absolute; left:0px; top:0px; height:auto!important;}
+#page_magView img.ImgNvo { position:absolute; left:0px; top:0px; height:auto!important;}

@@ -1,0 +1,149 @@
+.Formulario
+{
+	/*border: dashed 1px navy;
+	padding: 10px;*/
+	margin-top: 10px;
+}
+
+td.Etiq, td.Ctrl, td.EtTxtArea
+{
+	height:30px;
+}
+
+td.Etiq, td.EtTxtArea
+{
+	/*background-color:#5D7B9D;
+	color:White;
+	background-color:#EFEFEF;*/
+	text-align:left;
+	width:230px;
+}
+
+td.Etiq
+{
+	/*vertical-align:middle;*/
+}
+
+td.EtTxtArea
+{
+	vertical-align:text-top;
+}
+
+td.Ctrl
+{
+	text-align:left;	
+	/*background-color:#F7F7F7;*/
+	width:350px;
+}
+
+td.Vacia
+{
+	height:5px;
+	width:5px;
+}
+
+td
+{
+	/*padding: 2;
+	margin: 5;
+	border:solid 1px black;*/
+}
+
+span.etiq
+{/*
+	background-color:#5D7B9D;
+	color:White;
+	width:80px;*/
+	font-weight:bold;
+}
+
+.ElementoFlotante {
+	float:left;
+}
+
+table.TitVac
+{
+	background-color:#EFEFEF; 
+	border-top:solid 1px #C4C2C4;
+	border-bottom:solid 1px #C4C2C4;
+	text-align:center;
+}
+
+.Celda2
+{
+	background-color:White;
+	border-top:solid 2px #D6D8D7;
+	border-bottom:solid 2px #D6D8D7;
+	/*text-align:center;*/
+}
+
+td.CelVac
+{
+	font-size:14;
+	font-weight:600;
+	height:20px;
+}
+
+.Negritas
+{
+	font-weight:bolder;
+}
+
+.TitPrinc {
+	/*color: #7E9ECD;*/
+	font-size:14px;
+	font-weight:bolder;
+	/*padding:50px 0 0 0;*/
+}
+
+td.imagen
+{
+	 background-image:url(pixgris.gif);
+	 vertical-align:top;
+}
+
+#tblPrinc 
+{
+	border:0;
+	width:100%;
+}
+
+#tblPrinc td.Col1
+{
+	vertical-align:text-top; padding:0 8px;
+}
+
+#tblPrinc td.Col2
+{
+	width:9px;
+}
+
+#tblPrinc td.Col3
+{
+	 width:208px; vertical-align:text-top;
+}
+
+.Inv_RenEncab th
+{
+	background-color:#EFEFEF; 
+	border-top:solid 1px #C4C2C4;
+	border-bottom:solid 1px #C4C2C4;
+	padding:0px ! important;
+	text-align:center;
+	vertical-align:middle;
+	font-size:13px ! important;
+	height:29px ! important;
+}
+.Inv_RenEncab th img
+{
+}
+.Inv_RenEncab th span
+{
+	display:block;
+	float:left;
+	text-align:center;
+	padding-top:4px;
+}
+
+.spaOlvClv { display:block; margin-top:20px; margin-bottom:30px; color:#898E8C; }
+.spaOlvClv a {  color:#7F2860; }

@@ -1,0 +1,77 @@
+/**
+Stylesheet for SooperFish by www.SooperThemes.com
+Author: Jurriaan Roelofs
+*/
+
+/* Theming the menu */
+ul#nav {
+width:344px;
+margin: 0 auto;
+}
+ul#nav.Hog {
+width:448px;
+}
+
+ul#nav ul {
+background:#FAE2FA;
+}
+
+ul#nav ul.Hor {
+width:700px;
+left:-180px!important;
+}
+ul#nav ul.Hor > li { width:auto; }
+ul#nav ul.Hor > li > ul  {
+top:36px; margin-left:0px;
+}
+
+ul#nav li a,
+ul#nav li span {
+padding:10px 15px;
+font-size:14px;
+text-decoration:none;
+color:white;
+border-bottom:0px solid #000;
+}
+
+ul#nav ul li a,
+ul#nav ul li span {
+background:#FAE2FA;
+color:#7F2860;
+}
+
+ul#nav > li a:hover
+,ul#nav > li a:focus
+,ul#nav > li.sf-open > a
+,ul#nav > li span:hover
+,ul#nav > li span:focus
+,ul#nav > li.sf-open > span {
+color:#7F2860;
+background:#FAE2FA;
+cursor:pointer;
+}
+
+ul#nav ul li a:hover
+,ul#nav ul li a:focus
+,ul#nav ul li.sf-open > a
+,ul#nav ul li span:hover
+,ul#nav ul li span:focus
+,ul#nav ul li.sf-open > span {
+color:#f386af;
+background:#7F2860;
+}
+
+ul#nav ul ul {
+border-top:0px solid transparent;
+margin-top:0px;
+}
+
+div.sf-arrow {
+top:18px;
+right:0;
+}
+
+ul ul div.sf-arrow {
+right:12px;
+top:16px;
+}

@@ -1,0 +1,135 @@
+
+
+input, select, option, textarea { color:black; }
+body, form { margin:0px; text-align:center;}
+
+a { text-decoration:none; color:#898E8C; font-size:12px; }
+a:hover { text-decoration:underline; }
+
+/*
+.Morado { color:#7F2860; }
+.Gris { color:#898E8C; }
+.GrisClaro { color:#AEB0B2; }
+.RosaOscuro { color:#e07a9f; }
+.RosaClaro { color:#f386af; }
+*/
+
+
+
+
+
+/**/
+
+/*
+.divPaginador { text-align:right; }
+.divPaginador span span, .divPaginador span a 
+{
+    padding:3px 0px;
+    width: 16px;
+    height: 18px;
+    text-align:center;
+    vertical-align:middle;    	
+}
+.divPaginador span span
+{
+    font-weight:bold;
+}
+.divPaginador span a 
+{
+    text-decoration:none;
+    cursor: pointer;
+    border: solid 1px #C4C2C4;
+    font-weight: normal; 
+}
+*/
+
+ul.sf-menu
+,ul.sf-menu * {
+margin:0;
+padding:0;
+}
+
+ul.sf-menu {
+display:block;
+position:relative;
+z-index:20;
+}
+ul.sf-menu li {
+display:block;
+list-style:none;
+float:left;
+position:relative;
+}
+ul.sf-menu li:hover {
+visibility:inherit; /* fixes IE7 'sticky bug' */
+}
+ul.sf-menu a,
+ul.sf-menu span {
+display:block;
+position:relative;
+}
+ul.sf-menu ul {
+position:absolute;
+left:0;
+width:150px;
+top:auto;
+left:-999999px;
+}
+ul.sf-menu ul a,
+ul.sf-menu ul span {
+zoom:1; /* IE6/7 fix */
+}
+ul.sf-menu ul li {
+float:left; /* Must always be floated otherwise there will be a rogue 1px margin-bottom in IE6/7 */
+width:150px;
+}
+ul.sf-menu ul ul {
+top:0;
+margin:0 0 0 150px
+}
+
+ul.sf-menu li:hover ul,ul.sf-menu li:focus ul,ul.sf-menu li.sf-hover ul { /*first level*/
+left:auto;
+}
+ul.sf-menu li:hover ul ul,ul.sf-menu li:focus ul ul,ul.sf-menu li.sf-hover ul ul {
+left:-999999px;
+}
+ul.sf-menu ul li:hover ul,ul.sf-menu ul li:focus ul,ul.sf-menu ul li.sf-hover ul {/*second level*/
+left:auto;
+}
+ul.sf-menu ul li:hover ul ul,ul.sf-menu ul li:focus ul ul,ul.sf-menu ul li.sf-hover ul ul {
+left:-999999px;
+}
+ul.sf-menu ul ul li:hover ul,ul.sf-menu ul ul li:focus ul,ul.sf-menu ul ul li.sf-hover ul {/*third level*/
+left:auto;
+}
+ul.sf-menu ul ul li:hover ul ul,ul.sf-menu ul ul li:focus ul ul,ul.sf-menu ul ul li.sf-hover ul ul {
+left:-999999px;
+}
+ul.sf-menu ul ul ul li:hover ul,ul.sf-menu ul ul ul li:focus ul,ul.sf-menu ul ul ul li.sf-hover ul {/*fourth level*/
+left:auto;
+}
+ul.sf-menu ul ul ul li:hover ul ul,ul.sf-menu ul ul ul li:focus ul ul,ul.sf-menu ul ul ul li.sf-hover ul ul {
+left:-999999px;
+}
+
+/* autoArrows CSS */
+
+div.sf-arrow {
+width:7px;
+height:7px;
+position:absolute;
+top:8px;
+right:0;
+display:block;
+background-position:-43px -37px;
+/*background:url() no-repeat 0 0;*/
+overflow:hidden; /* making sure IE6 doesn't overflow and expand the box */
+font-size:1px;
+}
+
+ul ul div.sf-arrow {
+right:12px;
+top:7px;
+background-position:0 100%;
+}

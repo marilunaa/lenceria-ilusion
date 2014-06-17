@@ -1,0 +1,422 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<meta charset="utf-8">
+<title>Aplic. Web de jQuery Mobile</title>
+<link href="jquery.mobile-1.0.min.css" rel="stylesheet" type="text/css"/>
+
+</style>
+<script src="jquery-1.6.4.min.js" type="text/javascript"></script>
+<script src="jquery.mobile-1.0.min.js" type="text/javascript"></script>
+<script language="javascript">
+var nombre, mail, telefonito, asunto, seguridad;
+var mar ,ancho, mayuscula,x;
+var cadena,ancho1,x,y,z,a,b;
+var  cadena;
+var  ancho3,numer,telefono;
+var y1, y2, y3, y4, y5;
+
+function Lol(){
+nombre=document.getElementById("txtnombre").value;
+ancho=nombre.length;
+mayuscula=nombre.toUpperCase();
+document.getElementById("txtnombre").value=mayuscula;
+nombre=document.getElementById("txtnombre").value
+for (x=0; x<=ancho-1; x++)
+{
+	mar=nombre.charAt(x);
+	if((mar>='A' && mar<='Z') || (mar==" "))
+	{
+	}
+	else
+	{
+		alert("caracteres incorrectos");
+		break;
+	}
+}
+}
+ function mail (){
+cadena=document.getElementById("textmail").value;
+ancho1=cadena.length;
+for(x=0;x<=ancho1-1;x++)
+ {
+	if(((cadena.charAt(0)>='0')&&(cadena.charAt(0)<='9'))||(cadena.charAt(0)=='@'))
+	{
+			alert("Primer caracter inválido");
+		break;}
+	else
+	{
+		y=cadena.indexOf('@');
+		z=cadena.lastIndexOf('@');
+		if(y!=z){
+			alert("Solo introduce un @");
+			break;
+		}
+		else{
+			if((y==-1)&&(z==-1))
+			{
+			alert("Introduce un @");	
+			break;
+				}
+				else{
+					a=cadena.indexOf('.');
+	          if(a==-1)
+			  {
+				  alert("Introduce un punto");
+				  break;
+			  }
+					}
+			}
+	
+	}		
+ }
+}	
+function telefonito(){
+	telefono=document.getElementById("texttelefono").value;
+	ancho3=telefono.length;
+	for(x=0; x<=ancho3-1; x++){
+		numer=telefono.charAt(x);
+		if(((numer>=0)&&(numer<=9))||((numer=='-')||(numer==" ")))
+		{
+		}
+			else{
+			alert("Caracteres incorrectos, favor de introducir solo numeros");
+			break;
+		}
+	}
+				}
+				function asunto1(){
+		
+		asunto=document.getElementById("textasunto").value;
+		asunto=asunto.toUpperCase(); 
+		document.getElementById("textasunto").value=asunto;
+		}
+	function seguridad() {
+		seg1=document.getElementById("txtseguridad").value;
+		seg2=document.getElementById("textjelow").value;
+		if(seg1==seg2){
+		}
+		else{
+			alert("Los valores de seguridad no coinciden");
+		}
+	}
+function cholechito(){
+		y1=document.getElementById("txtnombre").value;
+		y2=document.getElementById("textasunto").value;
+		y3=document.getElementById("textmail").value;
+		y4=document.getElementById("textjelow").value;
+		y5=document.getElementById("texttelefono").value;
+		if((y1=="")||(y2=="")||(y3=="")||(y4=="")||(y5=="")){
+			alert("Favor de introducir toda la informacion");
+		}
+		else{
+			alert("Mensaje enviado");
+			document.getElementById("txtnombre").value="";
+		    document.getElementById("textasunto").value="";
+		    document.getElementById("textmail").value="";
+		    document.getElementById("textjelow").value="";
+		    document.getElementById("texttelefono").value="";
+		}
+	}
+</Script>
+</head> 
+<body class> 
+
+
+<div data-role="page" id="page">
+	
+     ,m <div data-role="header">
+		<h1>Ilusión</h1>
+	</div>
+	<div data-role="content">	
+   <center> <img src="Niv87_Len1_3.jpg" width="50%" height="25%"></center>
+		<ul data-role="listview">
+			<li><a href="#page2">¿Quiénes somos?</a></li>
+            <li><a href="#page3"> Servicios o Productos</a></li>
+            <li><a href="#page4">Equipo</a></li>
+			<li><a href="#page5">Contáctanos</a></li>
+		</ul>		
+	</div>
+	<div data-role="footer">
+		<h4>Marisol Cariño Ruíz</h4>
+	</div>
+</div>
+
+<div data-role="page" id="page2">
+	<div data-role="header">
+		<h1>¿Quiénes somos?</h1>
+	</div>
+	<div data-role="content">
+   
+  <center><img src="Logo_Ilusion.JPG" width="50%" height="10%"></center>
+ 
+<center><h1>Una historia con Ilusión </center>	</h1>
+        En 1949 nace un sueño con el nombre de Ilusión, una empresa 100% mexicana dedicada al mundo de la mujer. 
+
+Para el año de 1985, decidimos llevar ese sueño en forma de catálogo hasta las manos de mujeres emprendedoras. 
+
+Mujeres que en 1995, nos inspiraron para cruzar fronteras e iniciar la exportación de nuestros productos a diferentes países. 
+
+Y por quienes a inicios del 2001, surge “Ilusión Belleza” una línea de productos para el cuidado personal. 
+
+Ya en 2006, surge “Ilusión Hogar” una línea diseñada para la mujer que piensa en su familia cada día. 
+
+Un año después, y gracias a nuestros valores y alta calidad, ilusión se posicionó como una marca confiable y líder en la venta por catálogo.
+
+Este 2014 queremos seguir creciendo a tu lado y como tú nos lo pediste desarrollamos para ti la nueva línea ilusión zapatos, esperamos que la disfrutes.
+
+En esta ocasión te presentamos un catálogo en donde encontrarás looks completos y productos basados en las últimas tenencias de la moda y siempre con las tecnologías más innovadoras que te acompañarán a disfrutar esta nueva colección.
+
+<center> <h1> Nuestra Misión</h1>	</center>
+
+
+<center>Creamos moda y experiencias que motiven a la mujer latina a disfrutar su propia definición de lo que significa ser mujer.</center>
+
+<center> <h1> Nuestra Visión</h1>	</center>
+<center>Inspiramos a que las mujeres latinas alcancen la mejor versión de sí mismas.</center>
+<center> <img src="Ilusion - Mexico Archivos/HdLogo.png" width="50%" height="10%"></center>
+
+	</div>
+	<div data-role="footer">
+		<h4>Ilusión</h4>
+	</div>
+</div>
+
+<div data-role="page" id="page3">
+	<div data-role="header">
+		<h1> Productos</h1>
+	</div>
+	<div data-role="content">	
+		<center><img src="img7016_1.jpg" width="15%" height="20%"> </center>
+        <br>
+      <center > Bra: 967 </center>
+        <br>
+       <center> $139.00 </center>
+        <br>
+      <center> <img src="img7019_1.jpg" width="15%" height=" 20%"></center>
+       <br>
+      <center> Bra: 922 </center>
+        <br>
+       <center> $139.00 </center>
+        <br>
+           <center> <img src="img7033_1.jpg" width="15%" height=" 20%"></center>
+       <br>
+      <center> Bra: 969 </center>
+        <br>
+       <center> $169.00 </center>
+        <br>
+        <center> <img src="Mod_412_3_2.jpg" width="15%" height=" 20%"></center>
+        <p>
+        <center> Bóxer Juvenil
+        <br>
+$59.00
+<br>
+Características
+<br>
+    Con puente de Algodón
+    Combínalo con el mod. 6641 Algodón
+
+<br>
+Composición
+<br>
+Tela 141  |  Algodón Poliéster Elastano: 46% Algodón, 46% Poliéster, 7% Elastano
+Tela 28  |  Encaje: 88% Poliamida, 12% Elastano </center>
+       <br>
+            <center> <img src="Mod_73304_3_1.jpg" width="15%" height=" 20%"></center>
+            <br>
+        <center> 
+73304  Semanario
+<br>
+Paquete 7 bóxers Juvenil
+<br>
+$399.00
+<br>
+Características
+<br>
+    7 Piezas con puente de algodón
+    Incluye bolsita de tela Estampados en parte trasera Microfibra
+
+<br>
+Composición
+<br>
+Tela 13  |  Microfibra: 85% Poliamida, 15% Elastano
+Color: 	Multicolor
+ </center>
+           <center> <img src="Mod_415_3_2.jpg" width="15%" height=" 20%"></center>
+           <br>
+        <center> 
+Bóxer Juvenil
+<br>
+$59.00
+<br>
+Características
+<br>
+    Con puente de algodón
+    Combínalo con el mod. 6642 Microfibra
+
+<br>
+Composición
+<br>
+Tela 86  |  Grijalva: 89% Poliamida, 11% Elastano
+ </center>
+   
+ <center> <img src="Mod_6652_3_2.jpg" width="15%" height="20%">
+       <br>
+       <center> Pijama Juvenil
+$199.00
+<br>
+Características
+<br>
+    Fresco y Ligero Short con jareta ajustable
+    Algodón
+
+<br>
+Composición
+<br>
+Tela 1  |  Algodón Elastano: 93% Algodón, 7% Elastano
+Tela 141  |  Algodón Poliéster Elastano: 46% Algodón, 46% Poliéster, 7% Elastano
+<br>
+Color: 	Flores Campesinas Rococo Rose </center>
+     <center> <img src="Mod_415_3_2.jpg" width="15%" height=" 20%"></center>
+     <br>
+        <center> 
+Bóxer Juvenil
+<br>
+$59.00
+<br>
+Características
+<br>
+    Con puente de algodón
+    Combínalo con el mod. 6642 Microfibra
+<br<
+
+Composición
+<br>
+Tela 86  |  Grijalva: 89% Poliamida, 11% Elastano
+ </center>
+      <center> <img src="Mod_6627_3_1.jpg" width="15%" height=" 20%"></center>
+      <br>
+        <center> 
+Bóxer Juvenil
+<br>
+$59.00
+<br>
+Características
+<br>
+    Con puente de algodón
+    <br>
+    Combínalo con el mod. 6642 Microfibra
+<br>
+
+Composición
+<br>
+Tela 86  |  Grijalva: 89% Poliamida, 11% Elastano
+ </center>
+     
+      <center> <img src="Mod_6627_3_3.jpg" width="15%" height=" 20%"></center>
+      <br>
+        <center> 
+Top Juvenil
+<br>
+$119.00
+<br>
+Características
+<br>
+    Divertidos estampados Silueta amplia Algodón
+<br>
+
+Composición
+<br>
+Tela 1  |  Algodón Elastano: 93% Algodón, 7% Elastano
+ </center>
+     </div>
+	<div data-role="footer">
+		<h4>Ilusión</h4>
+	</div>
+</div>
+
+<div data-role="page" id="page4">
+	<div data-role="header">
+		<h1>Equipo</h1>
+	</div>
+	<div data-role="content">	
+   <center> <h3> MARISOL CARIÑO RUIZ</h3>
+    <br></center>
+   
+    <center>17 años de edad </center>
+   <center> Nació 16 de noviembre de 1996</center>
+   <center>Actualmente estudia en cbtis 184</center>
+   <center> "Técnica en programación"</center>
+   <center> Calle 10 de abril #29 San Juan Raboso Izúcar de Matamoros Puebla.</center>
+    <br>
+		<center><img src="10412100_594588770638923_1544396549_o.jpg"  width="30%" height="30%"></center>
+        <center> 
+                 </center>
+        <br>
+      <center>  <h3> MIGUEL ANGEL RODRIGUEZ PEREZ </h3> </center>
+  
+      
+   <center> 16 años de edad </center>
+   
+    <center>Nació 14 de agosto de 1997</center>
+    
+    <center>Actualmente estudia en cbtis 184</center>
+    
+    <center>"Técnico en programación"</center>
+   
+   <center> 2 oriente #16 col. Fovissste.</center>
+       <center> <img src="257161_425915840777873_93507572_o.jpg" width="30%" height="30%"><center>
+	</div>
+	<div data-role="footer">
+    
+		<h3>Autora: Marísol Caríño Ruíz</h3>
+	</div>
+</div>
+<div data-role="page" id="page5">
+	<div data-role="header">
+		<h1> Productos</h1>
+	</div>
+	<div data-role="content">	
+	<table width="0" border="0">
+    <center><img src="Ilusion - Mexico Archivos/HdLogo.png" width="50%" height="5%"></center>
+  <tr>
+    <td><label for="textinput">Nombre</label></td>
+    <td><input type="text" name="textnombre" id="txtnombre" value="" onBlur="Lol()" /></td>
+  </tr>
+  
+  <tr>
+    <td><label for="textinput">E-mail</label>
+     
+        
+      </td>
+    <td><input type="text" name="textmail" id="textmail" value="" onBlur="mail()" /></td>
+  </tr>
+  <tr>
+    <td><label for="textinput">Teléfono</label></td>
+    <td><input type="text" name="texttelefono" id="texttelefono" value="" onBlur="telefonito()" /></td>
+  </tr>
+  <tr>
+    <td><label for="textinput">Asunto</label></td>
+    <td><div data-role="fieldcontain">
+      <textarea cols="40" rows="8" name="textarea" id="textasunto" onBlur="asunto1()"></textarea>
+    </div></td>
+  </tr>
+  <tr>
+    <td>Seguridad:</td>
+    <td><input type="text" name="txtseguridad" id="txtseguridad" value="2014" disabled="disabled"/>
+    <input type="text" name="textjelow" id="textjelow" value="" onBlur="seguridad()"  /></td>
+  </tr>
+  <tr>
+    <td><button onClick="cholechito()">Enviar</button></td>
+
+  </tr>
+</table>
+
+	</div>
+	<div data-role="footer">
+		<h4>Ilusión</h4>
+	</div>
+</div>
+
+</body>
+</html>

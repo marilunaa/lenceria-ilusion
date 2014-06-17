@@ -1,0 +1,110 @@
+.sbHolder{
+	background-color: transparent;
+	border: solid 0px #AA769C;
+	font-size: 10px;
+	font-weight: normal;
+    line-height:12px;
+	height: 12px;
+	position: relative;
+	width: 56px;
+    float:left;
+}
+.sbHolder:focus .sbSelector{
+	
+}
+.sbSelector{
+	display: block;
+	height: 12px;
+	left: 0;
+	line-height: 12px;
+	outline: none;
+	overflow: hidden;
+	position: absolute;
+	text-indent: 2px;
+	top: 0;
+	width: 56px;
+}
+.sbSelector:link, .sbSelector:visited, .sbSelector:hover{
+	color: #f386af;
+	outline: none;
+	text-decoration: none;
+}
+.sbToggle{
+	background: url(img/HdMenuMapa2014.png) -56px -2px no-repeat;
+	display: block;
+	height: 12px;
+	outline: none;
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 18px;
+}
+.sbToggle:hover{
+	background: url(img/HdMenuMapa2014.png) -56px -2px no-repeat;
+}
+.sbToggleOpen{
+	background: url(img/HdMenuMapa2014.png) -56px -19px no-repeat;
+}
+.sbToggleOpen:hover{
+	background: url(img/HdMenuMapa2014.png) -56px -19px no-repeat;
+}
+.sbHolderDisabled{
+	background-color: #3C3C3C;
+	border: solid 1px #AA769C;
+}
+.sbHolderDisabled .sbHolder{
+	
+}
+.sbHolderDisabled .sbToggle{
+	
+}
+.sbOptions{
+	background-color: #7F2860;
+	border: solid 1px #AA769C;
+	list-style: none;
+	left: -1px;
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	top: 30px;
+	width: 120px;
+	z-index: 1;
+	overflow-y: auto;
+}
+.sbOptions li{
+	padding: 0 7px;
+}
+.sbOptions a{
+	border-bottom: dotted 1px #AA769C;
+	display: block;
+	outline: none;
+	padding: 7px 0 7px 3px;
+}
+.sbOptions a:link, .sbOptions a:visited{
+	color: #ddd;
+	text-decoration: none;
+}
+.sbOptions a:hover,
+.sbOptions a:focus,
+.sbOptions a.sbFocus{
+	color: #f386af;
+}
+.sbOptions li.last a{
+	border-bottom: none;
+}
+.sbOptions .sbDisabled{
+	border-bottom: dotted 1px #515151;
+	color: #999;
+	display: block;
+	padding: 7px 0 7px 3px;
+}
+.sbOptions .sbGroup{
+	border-bottom: dotted 1px #AA769C;
+	color: #EBB52D;
+	display: block;
+	font-weight: bold;
+	padding: 7px 0 7px 3px;
+}
+.sbOptions .sbSub{
+	padding-left: 17px;
+}

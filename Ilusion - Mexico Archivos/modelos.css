@@ -1,0 +1,42 @@
+.divPaginador span span, .divPaginador span a 
+{
+    padding:3px 0px;
+    width: 16px;
+    height: 18px;
+    text-align:center;
+    vertical-align:middle;    	
+    font-size:14px;
+}
+.divPaginador span span.Lbl
+{
+    font-weight:normal;
+}
+.divPaginador span span
+{
+    font-weight:bold;
+}
+
+.divPaginador span a[disabled=disabled]
+{
+    text-decoration:none;
+}
+
+.divPaginador { margin-right:40px; padding:12px 0; }
+.divPaginador > span { display:block; }
+.divPaginador div.Izq { display:inline-block; width:80%; }
+.divPaginador div.Der { display:inline-block; width:20%; text-align:right; }
+div.Sup { border-bottom:1px dotted #f386af; }
+div.Inf { border-top:1px dotted #f386af; }
+
+.TablaGrupos { margin-top:20px; }
+.TablaGrupos td { padding:0px 0px 20px 0px; text-align:center; width:145px; vertical-align:top; }
+.TablaGrupos td div { position:relative; }
+.TablaGrupos td img { margin-bottom:2px; border:0; width:145px; height:194px; }
+.ImgNvo { position:absolute; left:0px; top:159px; height:21px !important;}
+.CeldaSepa { width:43px !important; }
+
+.estMnuFil .estMnuVer .estTit { font-size:12px; color:#f386af; font-weight:normal; }
+
+.estGloboNombre, .estGloboNombre * { width:145px; height:45px; color:#7F2860; }
+.estGloboNombre table { border:0; border-collapse:collapse; border-spacing:0; }
+.estGloboNombre table tr td {  vertical-align:top; text-align:left; padding:0; color:#f386af!important; }
